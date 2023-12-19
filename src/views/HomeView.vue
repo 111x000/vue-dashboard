@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import { Chart as HighChart } from 'highcharts-vue'
+import { Chart } from 'highcharts-vue'
 
 import IconBars from '../components/icons/IconBars.vue'
 import SidePanel from '../components/SidePanel.vue'
@@ -164,9 +164,9 @@ const chartOptionsCarbon = {
 
           <template #content>
             <div class="grid chart-grid">
-              <high-chart :options="chartOptionsCost"></high-chart>
-              <high-chart :options="chartOptionsConsumption"></high-chart>
-              <high-chart :options="chartOptionsCarbon"></high-chart>
+              <chart :options="chartOptionsCost"></chart>
+              <chart :options="chartOptionsConsumption"></chart>
+              <chart :options="chartOptionsCarbon"></chart>
             </div>
           </template>
         </section-dropdown>
